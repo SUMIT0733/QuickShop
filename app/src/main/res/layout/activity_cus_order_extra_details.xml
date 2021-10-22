@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimarylight"
+    tool:context=".CusOrderExtraDetails">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/coed_nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="230dp"-->
+<!--                app:cardBackgroundColor="@color/colorPrimary">-->
+
+<!--                <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                    android:id="@+id/coed_status_icon"-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="150dp"-->
+<!--                    android:layout_marginTop="-50dp"-->
+<!--                    android:layout_margin="20dp"-->
+<!--                    app:civ_circle_background_color="@color/white"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:src="@drawable/pack_giphy"-->
+<!--                    app:civ_border_width="3dp"-->
+<!--                    app:civ_border_color="@color/colorPrimary"/>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                app:cardBackgroundColor="@color/colorPrimary">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/coed_status_icon"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/pack_giphy"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_middle"
+                android:layout_marginRight="@dimen/spacing_middle"
+                android:layout_marginTop="-40dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/spacing_middle"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/coed_cus_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prince Gabani ( 7779004422 )"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"/>
+
+
+
+                    <TextView
+                        android:id="@+id/coed_orderid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:text="QS772021030101"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/grey_60" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_middle" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_middle"
+                android:layout_marginRight="@dimen/spacing_middle"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/spacing_middle"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/coed_shop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="QuickSHOP( Katargam )"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/coed_shop_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:text="address"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/grey_60" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_middle" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_middle"
+                android:layout_marginRight="@dimen/spacing_middle"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/spacing_middle"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selected Pickup Time"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/coed_pickuptime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:text="1 to 3 PM,  22 March 2016"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/grey_60" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_middle" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_middle"
+                android:layout_marginRight="@dimen/spacing_middle"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/spacing_middle"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order Detail"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/coed_ordertime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:text="22 March 2016"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/grey_60" />
+
+                    <TextView
+                        android:id="@+id/coed_order_complete_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:text="22 March 2016"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/grey_60"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/coed_totalitems"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Items : 5"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                            android:textColor="@color/grey_60" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/coed_orderprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="R 80.00"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textColor="@color/light_green_700"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_middle" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_middle"
+                android:layout_marginRight="@dimen/spacing_middle"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/spacing_middle"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Item List"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/spacing_medium"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+<!--                        <CheckBox-->
+<!--                            android:id="@+id/sed_checkBox"-->
+<!--                            android:layout_weight="0.1"-->
+<!--                            android:layout_width="25dp"-->
+<!--                            android:layout_height="25dp"-->
+<!--                            android:layout_gravity="center"/>-->
+                        <TextView
+                            android:id="@+id/coed_product_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+                            android:layout_gravity="center"
+                            android:text="chhash"
+                            android:maxWidth="150dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_middle" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/item_delete"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="@color/Red"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="DELETE"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+<!--                <in.shadowfax.proswipebutton.ProSwipeButton-->
+<!--                    android:id="@+id/awesome_btn"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="8dp"-->
+<!--                    app:arrow_color="@color/white"-->
+<!--                    app:bg_color="@color/colorPrimary"-->
+<!--                    app:btn_text="Place Order"-->
+<!--                    app:text_color="@color/white"-->
+<!--                    app:text_size="15sp"-->
+<!--                    android:textStyle="bold" />-->
+
+            </androidx.cardview.widget.CardView>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_middle" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

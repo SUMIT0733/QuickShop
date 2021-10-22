@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_border">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_border"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="3dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:layout_marginBottom="@dimen/spacing_middle"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/enter_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="@color/white"
+                    android:padding="20dp"
+                    app:srcCompat="@drawable/icon_add_a_photo_24" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/grey_5" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xxlarge"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:entries="@array/category"
+                android:textAlignment="center"/>
+
+
+    <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/grey_5" />
+
+            <EditText
+                android:id="@+id/enter_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xxlarge"
+                android:background="@android:color/transparent"
+                android:hint="Enter Product Name"
+                android:minHeight="@dimen/spacing_xmlarge"
+                android:paddingLeft="@dimen/spacing_large"
+                android:paddingRight="@dimen/spacing_large"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/grey_5" />
+
+
+            <EditText
+                android:id="@+id/enter_weight"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xxlarge"
+                android:background="@android:color/transparent"
+                android:hint="Enter Product Weight "
+                android:minHeight="@dimen/spacing_xmlarge"
+                android:paddingLeft="@dimen/spacing_large"
+                android:paddingRight="@dimen/spacing_large"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/grey_5" />
+
+<!--            android:text="\u20b9 "-->
+
+            <EditText
+                android:id="@+id/enter_amount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xxlarge"
+                android:background="@android:color/transparent"
+                android:hint="Enter Amount"
+                android:inputType="number"
+                android:minHeight="@dimen/spacing_xmlarge"
+                android:paddingLeft="@dimen/spacing_large"
+                android:paddingRight="@dimen/spacing_large"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/text_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_weight="1"
+                    android:background="@drawable/addcart_text_border_2"
+                    android:gravity="center"
+                    android:text="CANCEL"
+                    android:textColor="@color/Red"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_submit"
+                    android:layout_width="0dp"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_weight="1"
+                    android:background="@drawable/addcart_text_border_2"
+                    android:gravity="center"
+                    android:text="SUBMIT"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+
+
+
+
+
+
+
+
+

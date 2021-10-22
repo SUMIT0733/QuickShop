@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sel_terms">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimarylight"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_gravity="start|center_vertical"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="NOTE "
+                android:textColorHint="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/red_circle"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:hint="Order Not Accepted"
+                android:textColorHint="@color/black"
+                android:textSize="10sp"
+                android:layout_gravity="start"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/yellow_circle"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:hint="Order In Packaging"
+                android:textColorHint="@color/black"
+                android:textSize="10sp"
+                android:layout_gravity="start"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/green_circle"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:hint="Order Ready to pickup"
+                android:textColorHint="@color/black"
+                android:textSize="10sp"
+                android:layout_gravity="start"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/icon_done"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:hint="Order Completed"
+                android:textColorHint="@color/black"
+                android:textSize="10sp"
+                android:layout_gravity="start"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/cancel"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:hint="Order Canceled By Customer "
+                android:textColorHint="@color/black"
+                android:textSize="10sp"
+                android:layout_gravity="start"
+                android:gravity="center"/>
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:drawableStart="@drawable/iconqs"-->
+<!--                android:drawablePadding="5dp"-->
+<!--                android:padding="5dp"-->
+<!--                android:hint="Order Completed"-->
+<!--                android:textColorHint="@color/black"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_gravity="start"-->
+<!--                android:gravity="center"/>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

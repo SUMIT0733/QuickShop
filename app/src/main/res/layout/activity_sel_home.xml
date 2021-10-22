@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sel_home">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="8dp"
+            android:weightSum="5"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/sel_edit_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:tint="@android:color/white"
+                    app:backgroundTint="@color/white"
+                    app:fabSize="auto"
+                    app:rippleColor="@color/colorPrimary"
+                    app:srcCompat="@drawable/icon_add_category" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Manage\nCategory"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/sel_complete_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:tint="@android:color/white"
+                    app:backgroundTintMode="add"
+                    app:backgroundTint="@color/white"
+                    app:fabSize="auto"
+                    app:rippleColor="@color/colorPrimary"
+                    app:srcCompat="@drawable/cart" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Completed\nOrders"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/sel_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:tint="@android:color/white"
+                    app:backgroundTintMode="add"
+                    app:backgroundTint="@color/white"
+                    app:fabSize="auto"
+                    app:rippleColor="@color/colorPrimary"
+                    app:srcCompat="@drawable/icon_terms" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terms &amp;\nConditions"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/sel_faq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:tint="@android:color/white"
+                    app:backgroundTintMode="add"
+                    app:backgroundTint="@color/white"
+                    app:fabSize="auto"
+                    app:rippleColor="@color/colorPrimary"
+                    app:srcCompat="@drawable/nav_faq_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FAQ\n"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/sel_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:tint="@android:color/white"
+                    app:backgroundTint="@color/white"
+                    app:fabSize="auto"
+                    app:rippleColor="@color/colorPrimary"
+                    app:srcCompat="@drawable/icon_logout" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Logout\n"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:background="@color/colorPrimarylight"
+            android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/spinnershop"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:dropDownWidth="fill_parent"
+            android:background="@drawable/addcart_text_border"
+            android:textAlignment="center"
+            android:contextClickable="true"
+            android:entries="@array/choose_shop" />
+
+    <ListView
+            android:id="@+id/olist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:divider="@null"
+            android:scrollbars="none"/>
+        <ImageView
+            android:id="@+id/no_item2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/qs"
+            android:alpha="0.2"
+            android:textAlignment="center"/>
+    </LinearLayout>
+    </LinearLayout>
+<!--    </androidx.core.widget.NestedScrollView>-->
+</LinearLayout>

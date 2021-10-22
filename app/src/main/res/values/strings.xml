@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">QuickShop</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="continue_shopping"><![CDATA[< < < CONTINUE SHOPPING > > >]]></string>
+
+    <string-array name="category">
+        <item>Grocery</item>
+        <item>Dairy</item>
+        <item>Masala</item>
+        <item>DryFruits</item>
+        <item>Food Package</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="choose_shop">
+        <item>QuickSHOP ( KATARGAM )</item>
+        <item>QuickSHOP ( VARACHHA )</item>
+        <item>QuickSHOP ( ADAJAN )</item>
+    </string-array>
+
+    <string-array name="choose_time">
+
+        <item>09 am to 11 am</item>
+        <item>11 am to 01 pm</item>
+        <item>01 pm to 03 pm</item>
+        <item>03 pm to 05 pm</item>
+        <item>05 pm to 07 pm</item>
+        <item>07 pm to 09 pm</item>
+        <item>09 pm to 11 pm</item>
+
+    </string-array>
+    <string name="title_activity_seller__home">Seller_Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="cus_terms">
+        <i>Products purchased from our site can be returned for a refund at any branch of our QuickSHOP within 7 days from the date of the invoice provided:</i>
+            <li>\nThe product has not been used and has not been altered in any manner</li>
+            <li>\nThe product is intact and in saleable condition.</li>
+            <li>\nThe product is accompanied by the original invoice of purchase.</li>
+            <li>\nThe following types of products - once accepted by customers cannot be returned:</li>
+            <li>\nRefrigerated items such as Butter, Cheese, Dahi, etc.</li>
+            <li>\nItems purchased in Bulk quantities</li><li></li>
+</string>
+
+    <string name="second">
+
+            \nProducts can only be returned for a refund. We don\'t provide an exchange of products.
+            <li>\nProducts purchased online from our mobile app can be returned only  at any branch of our QuickSHOP.</li>
+            <li>\nIn the event of any quality related complaint about a product, the customer should contact the QuickSHOP care number.Details of the consumer care cell of the Manufacturer or Marketer will be on the packaging of the product.AEL will refund customers through the same payment mode that was used to purchase the product online.Refunds for products that were purchased online using credit cards/Debit Cards/Internet Banking will be credited back to the respective account.Similarly, refunds for products purchased through Cash (Cash on Delivery) will be made in cash.</li>
+
+<li>\nConsent</li>
+    \nBy accessing this application, you consent to the terms and conditions of the Policy.
+        <li></li>
+
+    </string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+</resources>

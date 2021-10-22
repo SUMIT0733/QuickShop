@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tool_title"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Home"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="13dp"
+                android:foregroundGravity="center"
+                android:gravity="clip_vertical"
+                android:orientation="horizontal">
+
+                <com.steelkiwi.library.view.BadgeHolderLayout
+                    android:id="@+id/cart_badge"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:bhl_badge_radius="15dp"
+                    android:layout_gravity="center_vertical"
+                    app:bhl_default_badge_background="@color/red_900"
+                    app:bhl_text_color="@color/white"
+                    app:bhl_text_size="12sp">
+
+                    <ImageView
+                        android:id="@+id/cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_customer_cart" />
+                </com.steelkiwi.library.view.BadgeHolderLayout>
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="match_parent" />
+
+                <com.steelkiwi.library.view.BadgeHolderLayout
+                    android:id="@+id/notification_badge"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:bhl_badge_radius="15dp"
+                    android:layout_gravity="center_vertical"
+                    app:bhl_default_badge_background="@color/red_900"
+                    app:bhl_text_color="@color/white"
+                    app:bhl_text_size="12sp">
+
+                    <ImageView
+                        android:id="@+id/notification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_notifications" />
+                </com.steelkiwi.library.view.BadgeHolderLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar"
+        android:layout_above="@+id/navigation"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:itemRippleColor="@color/colorPrimarydark"
+        app:itemIconTint="@drawable/bottom_navigation_selector"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/home">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>
+

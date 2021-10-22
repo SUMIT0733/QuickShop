@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.quickshop">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/qs"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuickShop">
+        <activity android:name=".CusFAQ"></activity>
+        <activity android:name=".CusTermsCondition" />
+        <activity android:name=".Sel_Faq" />
+        <activity
+            android:name=".CusShopDetails"
+            android:parentActivityName=".Cus_home" />
+        <activity
+            android:name=".Sel_terms"
+            android:parentActivityName=".Cus_home" />
+        <activity
+            android:name=".PreRegister"
+            android:parentActivityName=".User_login" />
+        <activity
+            android:name=".Cus_Notification"
+            android:parentActivityName=".Cus_home" />
+        <activity
+            android:name=".CusOrderExtraDetails"
+            android:parentActivityName=".Cus_home" />
+        <activity
+            android:name=".SelCompleteOrderDetails"
+            android:parentActivityName=".Sel_Complete_Order" />
+        <activity
+            android:name=".Sel_OrderExtraDetail"
+            android:parentActivityName=".Sel_home" />
+        <activity android:name=".OrderSummary" />
+        <activity
+            android:name=".CheckoutOrder"
+            android:parentActivityName=".Cus_Cart" />
+        <activity
+            android:name=".Cus_View_Item_Activity"
+            android:parentActivityName=".Cus_home" />
+        <activity
+            android:name=".Sel_Complete_Order"
+            android:parentActivityName=".Sel_home" />
+        <activity
+            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+            android:launchMode="standard"
+            tools:ignore="MissingClass"
+            tools:replace="android:launchMode" />
+        <activity
+            android:name=".Sel_Manage_Category"
+            android:parentActivityName=".Sel_home" />
+        <activity
+            android:name=".Cus_Cart"
+            android:parentActivityName=".Cus_home" />
+        <activity
+            android:name=".Cus_home"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Forget"
+            android:parentActivityName=".User_login" />
+        <activity
+            android:name=".Register"
+            android:parentActivityName=".PreRegister" />
+        <activity android:name=".Sel_home" />
+        <activity android:name=".User_login" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".services.FirebaseMessageRecieved">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".services.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

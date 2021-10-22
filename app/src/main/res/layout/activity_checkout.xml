@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimarylight"
+    tools:context=".CheckoutOrder">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/main_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#f0f0f0"
+                android:padding="7dp"
+                android:focusableInTouchMode="true">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp">
+                        <TextView
+                            android:id="@+id/contact_detail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Contact Detail"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:paddingTop="5dp"
+                            android:textStyle="bold"/>
+
+                        <LinearLayout
+                            android:id="@+id/contact_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_margin="7dp"
+                            android:padding="7dp"
+                            android:background="@color/colorPrimarylight">
+
+<!--                            <com.google.android.material.textfield.TextInputLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:textColorHint="@color/grey_40"-->
+<!--                                android:padding="6dp"-->
+<!--                                android:nestedScrollingEnabled="true">-->
+<!--                                <com.google.android.material.textfield.TextInputEditText-->
+<!--                                    android:id="@+id/contact_name"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:drawableLeft="@drawable/icon_person"-->
+<!--                                    android:hint="Contact Person Name"-->
+<!--                                    android:paddingStart="10dp"-->
+<!--                                    android:drawablePadding="10dp"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textColorHint="@color/grey_40"-->
+<!--                                    android:textSize="13sp"/>-->
+<!--                            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                            <com.google.android.material.textfield.TextInputLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:textColorHint="@color/grey_40"-->
+<!--                                android:padding="2dp"-->
+<!--                                android:nestedScrollingEnabled="true">-->
+<!--                                <com.google.android.material.textfield.TextInputEditText-->
+<!--                                    android:id="@+id/contact_number"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:hint="Contact Number"-->
+<!--                                    android:textSize="13sp"-->
+<!--                                    android:drawableLeft="@drawable/phone_24"-->
+<!--                                    android:drawablePadding="10dp"-->
+<!--                                    android:paddingStart="12dp"-->
+<!--                                    android:inputType="number"-->
+<!--                                    android:maxLength="10"-->
+<!--                                    android:textColor="@color/black"-->
+<!--                                    android:textColorHint="@color/grey_40" />-->
+<!--                            </com.google.android.material.textfield.TextInputLayout>-->
+
+                            <TextView
+                                android:id="@+id/user_name_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:gravity="center_vertical"
+                                android:hint="Contact Person Name"
+                                android:textSize="15sp"
+                                android:textAllCaps="true"
+                                android:drawableLeft="@drawable/icon_person"
+                                android:drawablePadding="10dp"
+                                android:paddingStart="10dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/grey_40"
+                                />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+                                android:background="@color/white" />
+
+                            <TextView
+                                android:id="@+id/user_number_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:gravity="center_vertical"
+                                android:hint="Contact Number"
+                                android:textSize="15sp"
+                                android:drawableLeft="@drawable/phone_24"
+                                android:drawablePadding="10dp"
+                                android:paddingStart="12dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/grey_40" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/white"
+                        android:paddingBottom="10dp">
+                        <TextView
+                            android:id="@+id/pickup_detail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Pickup detail"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:paddingTop="5dp"
+                            android:textStyle="bold"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey_300" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="Choose Pickup Point Near By You"
+                            android:textSize="15sp" />
+                        <Spinner
+                            android:id="@+id/spinner_address"
+                            android:layout_width="300dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/addcart_text_border"
+                            android:textAlignment="center"
+                            android:entries="@array/choose_shop" />
+                        <TextView
+                            android:id="@+id/pick_address_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
+                            android:text="address\nsurat "
+                            android:textSize="15sp" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"/>
+                            </LinearLayout>
+                     </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:layout_marginTop="10dp"
+                            app:cardCornerRadius="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pickup Date"
+                                    android:padding="3dp"
+                                    android:textStyle="bold"
+                                    android:textSize="13sp"
+                                    android:textColor="@color/black"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:id="@+id/date"
+                                    android:layout_width="300dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginRight="60dp"
+                                    android:layout_marginLeft="60dp"
+                                    android:background="@drawable/fram_box"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:hint="Choose Date"
+                                    android:padding="5dp"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pickup Time"
+                                    android:padding="3dp"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:gravity="center"/>
+                                <Spinner
+                                    android:id="@+id/spinner_time"
+                                    android:layout_width="300dp"
+                                    android:layout_gravity="center"
+                                    android:layout_height="30dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="25dp"
+                                    android:layout_marginRight="60dp"
+                                    android:layout_marginLeft="60dp"
+                                    android:background="@drawable/fram_box"
+                                    android:textAlignment="center"
+                                    android:entries="@array/choose_time" />
+
+
+                        </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <TextView
+                        android:id="@+id/offer_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Order Details"
+                        android:paddingBottom="5dp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:paddingTop="5dp"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:id="@+id/offer_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:layout_marginTop="33dp"
+                        android:orientation="vertical"
+                        android:layout_marginStart="11dp">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey_300" />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total amount"
+                                android:textColor="@color/black"
+                                android:padding="2dp"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:id="@+id/total_amt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:layout_alignParentEnd="true"
+                                android:text="\u20b9 150"
+                                android:layout_marginEnd="15dp"
+                                android:textSize="14sp"
+                                android:padding="2dp"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Packaging charge"
+                                android:textColor="@color/black"
+                                android:padding="2dp"
+                                android:textSize="14sp"/>
+                            <TextView
+                                android:id="@+id/charges_amt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:layout_alignParentEnd="true"
+                                android:text="\u20b9 10"
+                                android:layout_marginEnd="15dp"
+                                android:textSize="14sp"
+                                android:padding="2dp"/>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Payable amount"
+                                android:textColor="@color/black"
+                                android:padding="2dp"
+                                android:textStyle="bold"
+                                android:textSize="15sp"/>
+                            <TextView
+                                android:id="@+id/payable_amt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:layout_alignParentEnd="true"
+                                android:text="\u20b9 160"
+                                android:layout_marginEnd="15dp"
+                                android:textSize="15sp"
+                                android:padding="2dp"/>
+                        </RelativeLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/payment"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:text="Proceed to pay amount : 120"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:elevation="15dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".CusOrderSummary">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/qs"
+                android:layout_gravity="center" />
+            <!--    <TextView-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:text="Order Placed!"-->
+            <!--        android:textColor="@color/black"-->
+            <!--        android:layout_gravity="center"-->
+            <!--        android:textStyle="bold"-->
+            <!--        android:textSize="19sp"/>-->
+
+            <!--        <android.support.v4.widget.Space-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="10dp" />-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order Detail"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:background="@drawable/edit_square"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:padding="7dp"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+            <TextView
+                android:id="@+id/order_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order id : 26022019001"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/white"/>
+
+
+            <!--        <TextView-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Total amount"-->
+            <!--            android:textColor="@color/black"-->
+            <!--            android:padding="2dp"-->
+            <!--            android:textSize="14sp"/>-->
+
+            <!--        <View-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="8dp" />-->
+            <!--        <TextView-->
+            <!--            android:id="@+id/amount"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Order amount : 150"-->
+            <!--            android:visibility="gone"-->
+            <!--            android:textColor="@color/black"-->
+            <!--            android:gravity="center"/>-->
+            <LinearLayout
+                android:id="@+id/offer_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp">
+                    <TextView
+                        android:id="@+id/item_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text=" 1.  Milk  *  3" />
+                    <TextView
+                        android:id="@+id/product_amt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_alignParentEnd="true"
+                        android:text="\u20b9 90"
+                        android:layout_marginEnd="15dp"
+                        android:textSize="14sp"
+                        android:padding="2dp"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_300" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total amount"
+                        android:textColor="@color/black"
+                        android:padding="2dp"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:id="@+id/original_amt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_alignParentEnd="true"
+                        android:text="\u20b9 120"
+                        android:layout_marginEnd="15dp"
+                        android:textSize="14sp"
+                        android:padding="2dp"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"
+                    android:background="@color/grey_500" />
+                <!--            <RelativeLayout-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content">-->
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="Order amount"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:padding="2dp"-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    android:textSize="17sp"/>-->
+                <!--                <TextView-->
+                <!--                    android:id="@+id/final_amt"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    android:layout_alignParentEnd="true"-->
+                <!--                    android:text="\u20b9 100"-->
+                <!--                    android:layout_marginEnd="15dp"-->
+                <!--                    android:textSize="17sp"-->
+                <!--                    android:padding="2dp"/>-->
+                <!--            </RelativeLayout>-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+            </LinearLayout>
+
+
+            <!--        <View-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="20dp" />-->
+            <!--        <TextView-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Shope Detail"-->
+            <!--            android:layout_marginStart="35dp"-->
+            <!--            android:layout_marginEnd="35dp"-->
+            <!--            android:background="@drawable/edit_square"-->
+            <!--            android:textColor="@color/black"-->
+            <!--            android:gravity="center"-->
+            <!--            android:padding="7dp"-->
+            <!--            android:textStyle="bold"-->
+            <!--            android:textSize="17sp"/>-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/shop_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="QUICKSHOP( Katargam ) "
+                    android:layout_gravity="center"
+                    android:textSize="18sp" />
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="1.5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/black"
+                    android:layout_gravity="center"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+                <TextView
+                    android:id="@+id/restaurant_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="49, Karunasagar, Opp.Avalon\nSurat - 395004\ncontact : 9876543210"
+                    android:gravity="center"/>
+                <!--        <TextView-->
+                <!--            android:id="@+id/restaurant_city"-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:text="Surat - 395004"-->
+                <!--            android:gravity="center" />-->
+                <!--        <TextView-->
+                <!--            android:id="@+id/restaurant_contact"-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:text="Contact : (+91)9999999999"-->
+                <!--            android:gravity="center"-->
+                <!--            android:layout_marginTop="10dp"-->
+                <!--            android:textColor="@color/black"-->
+                <!--            android:textStyle="bold"/>-->
+
+                <!--        android:visibility="gone"-->
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Pickup Details"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/pickup_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="25-02-2019"
+                android:textSize="14sp"/>
+            <TextView
+                android:id="@+id/pickup_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="07 to 09 PM" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Customer Detail"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:background="@drawable/edit_square"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+            <!--        <View-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="10dp" />-->
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prince Gabani"
+                android:layout_gravity="center"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/user_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="7779004422" />
+
+            <!--        <TextView-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_gravity="center"-->
+            <!--            android:layout_marginTop="10dp"-->
+            <!--            android:text="DATE"-->
+            <!--            android:textColor="@color/grey_500"-->
+            <!--            android:textSize="15sp" />-->
+            <!--        <TextView-->
+            <!--            android:id="@+id/date"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_gravity="center"-->
+            <!--            android:text="25-02-2019 08:8:08"-->
+            <!--            android:textColor="@color/black"/>-->
+
+            <!--        <TextView-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_gravity="center"-->
+            <!--            android:layout_marginTop="10dp"-->
+            <!--            android:text="STATION"-->
+            <!--            android:textColor="@color/grey_500"-->
+            <!--            android:textSize="15sp" />-->
+            <!--        <TextView-->
+            <!--            android:id="@+id/station"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="ANAND "-->
+            <!--            android:layout_gravity="center"-->
+            <!--            android:textColor="@color/black"/>-->
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
